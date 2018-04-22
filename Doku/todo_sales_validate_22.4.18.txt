@@ -1,0 +1,72 @@
+check old_nexttradeid != new_nexttradeid
+check sortierung_nexttradeid == id_nexttradeid
+check price is float
+if($date = date_create_from_format('Y-m-d H:i:s.u', '2018-04-20 08:00:01.815'))
+    echo date_format($date, 'U');
+else
+    echo "in die hose gegangen";
+wenn nach durchlauf kein marker="P" gefunden und array größer als 1 schmeiße warning: Matches avaiable but no marker
+
+  {
+    "refresh": 20,
+    "id": "39702",
+    "volume": "50",
+    "price": "135,44",
+    "date": "2018-04-20",
+    "time": "18:57:21.530",
+    "marker": "K",
+    "match_id": "42668978369",
+    "sortierung": "39702",
+    "otctype": "N",
+    "einfaerben": 0,
+    "spot": 0
+  },
+  {
+    "id": "39703",
+    "volume": "100",
+    "price": "135,44",
+    "date": "2018-04-20",
+    "time": "18:57:21.530",
+    "marker": "S",
+    "match_id": "42668978369",
+    "sortierung": "39702",
+    "otctype": "N",
+    "einfaerben": 0,
+    "spot": 0
+  },
+  {
+    "id": "39703",
+    "volume": "150",
+    "price": "135,44",
+    "date": "2018-04-20",
+    "time": "18:57:21.530",
+    "marker": "K",
+    "match_id": "42668978369",
+    "sortierung": "39702",
+    "otctype": "N",
+    "einfaerben": 0,
+    "spot": 0
+  },
+  {
+    "id": "39702",
+    "price": "135,44",
+    "date": "2018-04-20",
+    "time": "18:57:21.530",
+    "marker": "P",
+    "umsatz": "150",
+    "match_id": "42668978369",
+    "sortierung": "39702",
+    "otctype": "N",
+    "einfaerben": 1,
+    "spot": 0
+  },
+
+is array
+$array = [
+    "foo" => $array = ["name" => "marker","type" => "string","log" => true],
+    "bar" => "foo",
+];
+$array = array(["name" => "marker","type" => "string","log" => false],
+		["name" => "marker","type" => "string","log" => true]);
+
+$array = array(["name" => "bid","type" => "float","log" => true],["name" => "ask","type" => "float","log" => true]);

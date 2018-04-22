@@ -1,0 +1,19 @@
+Punkt markieren:
+https://stackoverflow.com/questions/9681814/highcharts-highlight-single-point-on-line
+http://jsfiddle.net/zR4Kn/
+
+Vertikale Line im Graphen:
+http://jsfiddle.net/jugal/RWCua/
+https://stackoverflow.com/questions/21427943/how-to-draw-a-vertical-line-on-highcharts
+https://stackoverflow.com/questions/42160969/how-to-add-vertical-lines-to-graph-with-highstocks-or-highcharts?rq=1
+
+Hinzufügen/Entfernen on the fly von vertikalen Linen (Plotlines im Graphen):
+https://stackoverflow.com/questions/32658768/how-to-show-plot-lines-in-the-legend-in-highcharts
+http://jsfiddle.net/ors831wt/
+
+Datagrouping / Reduzierte Anzeige von Daten
+https://jsfiddle.net/gh/get/library/pure/highcharts/highcharts/tree/master/samples/stock/demo/data-grouping/
+http://jsfiddle.net/gh/get/library/pure/highcharts/highcharts/tree/master/samples/stock/plotoptions/series-datagrouping-approximation - individual data
+https://stackoverflow.com/questions/30095635/how-to-handle-highcharts-zooming-with-large-data-sets
+https://www.highcharts.com/stock/demo/data-grouping
+https://api.highcharts.com/highstock/plotOptions.series.dataGrouping - doku for individual datasets
