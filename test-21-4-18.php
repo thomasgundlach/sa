@@ -5,7 +5,7 @@ define('__SA__TODAY_FOLDER__',date('Y/m/d',__SA__TIMESTAMP__));
 define('__SA__TIME_START__',microtime(true));
 define('__SA__MAX_SECONDS_PAST__',18);
 // define('__SA__TODAY_TIME__', strtotime(__SA__TODAY_FOLDER__)); // Production
-define('__SA__TODAY_TIME__', strtotime("2018/04/20")); // Debug
+define('__SA__TODAY_TIME__', strtotime("2018/05/04")); // Debug
 
 function handleError($errno, $errstr, $errfile, $errline, array $errcontext) {
     
@@ -267,12 +267,14 @@ function parseStockArray($homepage, $fields, $_skip, $stock_values, $timestamp, 
                 }
                 try {
                     switch (count($fields)) {
+                        // Quotation
                         case 2:
                             global $maxHighPrice, $minLowPrice, $maxHighPriceTime, $minLowPriceTime;
                             // HIER WEIERMACHEN 22.4.18
                             validedateDataLogicValues($maxHighPrice, $minLowPrice, $maxHighPriceTime, $minLowPriceTime, $fields, $_skip, $stock_values, $stock_value, $filename, $line, $timestamp, $isin, $homepage);
                             // HIER WEIERMACHEN 22.4.18
                         break;
+                        // Sale
                         case 7:
                             global $maxHighPrice, $minLowPrice, $maxHighPriceTime, $minLowPriceTime;
                             validedateDataLogicSales($maxHighPrice, $minLowPrice, $maxHighPriceTime, $minLowPriceTime, $fields, $_skip, $stock_values, $stock_value, $filename, $line, $timestamp, $isin, $homepage);
